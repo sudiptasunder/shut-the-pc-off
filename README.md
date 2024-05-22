@@ -38,6 +38,9 @@ This Python program is designed to provide users with an easy and flexible way t
 
 This program is an excellent tool for anyone looking to automate their computer's power management, offering both scheduled and immediate options with user-friendly commands.
 
+4. **Modules Required**:
+   - OS Module
+
 *****************************************************************************Cheatcode*****************************************************************************
 Type 'shut-now' to shutdown the computer/pc without any further process. 
 Type 'mr-reboot' to restart the computer/pc without any further process. 
