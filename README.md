@@ -44,4 +44,4 @@ Type 'mr-reboot' to restart the computer/pc without any further process.
 
 About changing the cheatcode: 
 If you want to change the cheatcode then, you can make changes into the 'cheatcode.py' file. 
-*****************************************************************************Cheatcode*****************************************************************************
+
