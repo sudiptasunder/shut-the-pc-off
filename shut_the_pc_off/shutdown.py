@@ -75,7 +75,7 @@ elif user_input == cheatcode.codex_s:
     os.system('cmd /k "shutdown -s -t 0"')
 
 elif user_input == cheatcode.codex_r:
-    os.system('cmd /k "shutdown -r -t 350"')
+    os.system('cmd /k "shutdown -r -t 0"')
 
 #What will happen if you press some other key
 else:
