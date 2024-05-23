@@ -1,26 +1,33 @@
-# Importing the modules
+#Importing the modules
 import os
 
 #Importing the cheatcode
 import cheatcode
 
-# Logo for the program
+#File Path
+file_path = os.getcwd() 
+
+#Logo for the program
 print('''
 ╔═══╦╗────╔╗──╔╗╔╗─────╔═══╦═══╗────╔═╗╔═╗
 ║╔═╗║║───╔╝╚╗╔╝╚╣║─────║╔═╗║╔═╗║────║╔╝║╔╝
 ║╚══╣╚═╦╗╠╗╔╝╚╗╔╣╚═╦══╗║╚═╝║║─╚╝╔══╦╝╚╦╝╚╗
 ╚══╗║╔╗║║║║║──║║║╔╗║║═╣║╔══╣║─╔╗║╔╗╠╗╔╩╗╔╝
 ║╚═╝║║║║╚╝║╚╗─║╚╣║║║║═╣║║──║╚═╝║║╚╝║║║─║║
-╚═══╩╝╚╩══╩═╝─╚═╩╝╚╩══╝╚╝──╚═══╝╚══╝╚╝─╚╝\nDeveloped By Sudipta Sunder\n''')
+╚═══╩╝╚╩══╩═╝─╚═╩╝╚╩══╝╚╝──╚═══╝╚══╝╚╝─╚╝\nDeveloped By Sudipta Sunder''')
+print("Current Directory: ",file_path)
+print("File Path: ", __file__,"\n\n")
 
+#This variable helps to run the program continiously...
+run = True
 
-# User selection options
+#User selection menu
 print("WARNING!\nDON'T TRY TO CHANGE THE NAME OF THIS PROGRAM, OTHERWISE THE PROGRAM WON'T WORK AND WILL STUCK IN A CONTINIOUS LOOP!\n")
-print('1. DIRECT SHUTDOWN (LESS THAN 1 MIN)\n2. DIRECT RESTART (LESS THAN 1 MIN)\n3. TIMED SHUTDOWN\n4. TIMED RESTART\n5. ABORT SHUTDOWN OR RESTART\n6. TYPE "000" FOR IMMEDIATE SHUTDOWN OR RESTART\n\n[ENTER YOUR CHEAT CODE(S) TO SHUTDOWN IN 0S]')
+print('1. DIRECT SHUTDOWN (LESS THAN 1 MIN)\n2. DIRECT RESTART (LESS THAN 1 MIN)\n3. TIMED SHUTDOWN\n4. TIMED RESTART\n5. ABORT SHUTDOWN OR RESTART\n6. TYPE "000" FOR IMMEDIATE SHUTDOWN OR RESTART\n7. TYPE "001" TO DELETE THIS PROGRAM\n\nENTER YOUR CHEAT CODE(S) TO SHUTDOWN OR RESTART IN 0S]\n')
 print("\nTYPE LETTER(S) IN UPPER CASE IN NEXT PROCESS ONLY IF GO WITH THE 6TH OPTION\n")
 user_input = input("SELECT ONE OF THE FOLLOWING OPERATIONS:    \n")
 
-# What will happen if you select 1
+#What will happen if you select 1
 if user_input == '1':
     print("THE COMPUTER WILL SHUTDOWN IN LESS THAN 60S...\n")
     os.system('cmd /k "shutdown -s"')
@@ -66,9 +73,25 @@ elif user_input == '000':
     elif confirmation == "NO":
         print("SEEMS LIKES YOU FORGOT TO SAVE SOME OF THE WORK IN YOUR COMPUTER. PROCESS 000 WAS NOT EXECUTED.\n")
     else:
-        print("TYPE 'YES' OR 'NO' TO EXECUTE THE PROCESS FURTHER.\n")
+        print("\nTYPE 'YES' OR 'NO' TO EXECUTE THE PROCESS FURTHER.")
         print("MAKE SURE TO TYPE EVERYTHING IN UPPER CASE. LOWERCASE IS NOT ALLOWED.")
-        print("PROCESS 000 HAS BEEN CANCELLED.\n")
+        print("PROCESS 000 HAS BEEN CANCELLED.")
+        
+#What will happen if you select 001
+elif user_input == '001':
+    print('ARE YOU SURE YOU WANT TO DELETE THIS PROGRAM?\n')
+    print("THIS STEP IS IRREVERSIBLE. ONCE DELETED, YOU CAN'T RECOVER THE FILES.\n")
+    confirm_deletion = str(input("TYPE 'YES' OR 'NO' TO CONTINUE:\n"))
+    if confirm_deletion == "YES":
+        os.remove(__file__)
+        os.remove(cheatcode.cheatcode_path)
+        run = False
+    elif confirm_deletion == "NO":
+        print("THE PROCESS WAS NOT EXECUTED...\n")
+    else:
+        print("TYPE 'YES' OR 'NO' IN UPPER CASE TO EXECUTE THE COMMANDS")
+        print('PROCESS 001 HAS BEEN CANCELLED...\n')
+        run = False
 
 #What will happen if you enter your Cheat Code
 elif user_input == cheatcode.codex_s:
@@ -77,12 +100,17 @@ elif user_input == cheatcode.codex_s:
 elif user_input == cheatcode.codex_r:
     os.system('cmd /k "shutdown -r -t 0"')
 
-#What will happen if you press some other key
+elif user_input == cheatcode.codex_d:
+    run = False
+    os.remove(__file__)
+    os.remove(cheatcode.cheatcode_path)
+
+#What will happen if you type something which is not in the menu
 else:
-    print("YOU CAN ONLY CHOOSE THE ABOVE FOLLOWING OPTIONS.\n")
-    print("IF THE CHEATCODE ISN'T WORKING, TRY CHECKING THE NAME OF THE VARIABLE OR CHECK IF THE CODEX_S or CODEX_R HAS BEEN CHANGED OR NOT.\n")
+    print("\nYOU CAN ONLY CHOOSE THE ABOVE FOLLOWING OPTIONS.\n")
+    print("***IN CASE IF THE CHEATCODE(S) ISN'T WORKING, TRY CHECKING THE NAME OF THE VARIABLE OR CHECK IF THE CODEX_S OR CODEX_R HAS BEEN CHANGED OR NOT IN 'CHEATCODE.PY'***")
+    run = False
 
 #This will keep the program running...Stop it using CTRL + C
-while True:
+while run:
     os.system('shutdown.py')
-
