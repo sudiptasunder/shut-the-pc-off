@@ -12,6 +12,9 @@ This Python program is designed to provide users with an easy and flexible way t
 
 3. **Instant Shutdown with Cheat Code**:
    - For quick and immediate shutdowns, the program includes a cheat code feature. By entering the specified cheat code, users can bypass the timer and shutdown the computer instantly. This is useful for emergencies or when you need to quickly power off the system.
+  
+3. **Instant Deletion with Cheat Code**:
+   - We also allow our users to delete the program easily with a cheatcode. You can delete both of the programs directly by entering the cheatcode. In some situations, it may become urgent for us to delete the program while using it. Like, if you want to have some fun with your teachers at the school. You can run the commands and then you can delete the program so that they can never figure out how you did that. 
 
 #### Use Cases ####
 
@@ -36,14 +39,18 @@ This Python program is designed to provide users with an easy and flexible way t
 3. **Using the Cheat Code for Immediate Shutdown**:
    - Enter the predefined cheat code into the program to trigger an instant shutdown of the computer, bypassing any timers or delays.
 
+4. **Using the Cheat Code for Immediate Deletion**:
+   - Enter the predefined cheat code into the program to trigger a process which deletes both of the program in just time. 
+
 This program is an excellent tool for anyone looking to automate their computer's power management, offering both scheduled and immediate options with user-friendly commands.
 
-4. **Modules Required**:
+5. **Modules Required**:
    - OS Module
 
-*****************************************************************************Cheatcode*****************************************************************************
+*****************************************************************************Cheatcode(s)*****************************************************************************
 Type 'shut-now' to shutdown the computer/pc without any further process. 
 Type 'mr-reboot' to restart the computer/pc without any further process. 
+Type 'remove-me' to delete the programs without any futher process. 
 
 About changing the cheatcode: 
 If you want to change the cheatcode then, you can make changes into the 'cheatcode.py' file. 
