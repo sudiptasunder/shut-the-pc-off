@@ -7,6 +7,9 @@ codex_r = "mr-reboot"
 # The above code deletes both of the program
 codex_d = "remove-me"
 
+#The above code exits the program directly
+codex_exit = "exit"
+
 # The below variable is used when the user selects the deletion option
 cheatcode_path = __file__
 
