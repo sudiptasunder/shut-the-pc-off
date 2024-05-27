@@ -13,7 +13,7 @@ This Python program is designed to provide users with an easy and flexible way t
 3. **Instant Shutdown with Cheat Code**:
    - For quick and immediate shutdowns, the program includes a cheat code feature. By entering the specified cheat code, users can bypass the timer and shutdown the computer instantly. This is useful for emergencies or when you need to quickly power off the system.
   
-3. **Instant Deletion with Cheat Code**:
+4. **Instant Deletion with Cheat Code**:
    - We also allow our users to delete the program easily with a cheatcode. You can delete both of the programs directly by entering the cheatcode. In some situations, it may become urgent for us to delete the program while using it. Like, if you want to have some fun with your teachers at the school. You can run the commands and then you can delete the program so that they can never figure out how you did that. 
 
 #### Use Cases ####
@@ -47,10 +47,16 @@ This program is an excellent tool for anyone looking to automate their computer'
 5. **Modules Required**:
    - OS Module
 
+#### How to turn off loading animation for faster loading of the interface ####
+1. **'animation_switch.py'**:
+   - You can change the bool value to False to turn off animations. In simple words, you can go to the 'animation_swtich.py' program and instead of 'True', just type 'False' and all the animations will be turned off.
+
+
 *****************************************************************************Cheatcode(s)*****************************************************************************
 Type 'shut-now' to shutdown the computer/pc without any further process. 
 Type 'mr-reboot' to restart the computer/pc without any further process. 
 Type 'remove-me' to delete the programs without any futher process. 
+Type 'exit' to exit the program directly.
 
 About changing the cheatcode: 
 If you want to change the cheatcode then, you can make changes into the 'cheatcode.py' file. 
