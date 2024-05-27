@@ -42,10 +42,9 @@ This Python program is designed to provide users with an easy and flexible way t
 4. **Using the Cheat Code for Immediate Deletion**:
    - Enter the predefined cheat code into the program to trigger a process which deletes both of the program in just time. 
 
-This program is an excellent tool for anyone looking to automate their computer's power management, offering both scheduled and immediate options with user-friendly commands.
-
 5. **Modules Required**:
    - OS Module
+This program is an excellent tool for anyone looking to automate their computer's power management, offering both scheduled and immediate options with user-friendly commands.
 
 #### How to turn off loading animation for faster loading of the interface ####
 1. **'animation_switch.py'**:
